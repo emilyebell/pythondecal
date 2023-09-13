@@ -1,0 +1,23 @@
+Name: Emily Bell
+Student ID: 3038815691
+
+1. What are 3-5 (or more) commands that you can use on terminal and what do they do? What language is your computer terminal in?
+ls: lists documents in a given directory
+cd: changes directory
+pwd: prints out the path of the directory youre in
+mkdir: make a directory
+
+My computer terminal uses Z Shell (zsh)
+
+2. Do you have pets? What kind?
+Yes! I have 2 dogs and 1 cat!
+
+3. If you run across an error, what would your first course of action be?
+Look it up on the internet.
+
+4. Funniest thing that happened to you in high school.
+One time I was walking in between two teachers down a flight of stairs and I fell all the way down. It was extremely embarrassing.
+
+5. What is a python script? (Keep it simple).
+A python script are instruction that tell the Python interpreter what to do.
+
