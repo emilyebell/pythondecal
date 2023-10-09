@@ -26,8 +26,7 @@ print(is_it_a_leap_year(2100))  # False
 def what_is_BMI(height, weight):
     if height == 0:
         return "nobody is 0m tall!"
-    bmi = weight / (height ** 2)
-    return bmi
+    return (weight/(height**2))
 weight = 70  # in kilograms
 height = 1.8  # in meters
 print(what_is_BMI(weight, height))
@@ -128,11 +127,11 @@ print(count_vowels(text))  # outputs 4
 
 # 8) Write a function that takes in an integer and returns the sum of the digits (the digital root).
 def digital_root(n):
-    while n >= 10:  # Continue until n is a single-digit number
+    while n >= 10:  
         sum_of_digits = 0
         while n > 0:
-            sum_of_digits += n % 10  # Add the last digit to the sum
-            n //= 10  # Remove the last digit
+            sum_of_digits += n % 10  # Add last number
+            n //= 10  # Remove last number
         n = sum_of_digits  # Set n to the sum of its digits for the next iteration
     return n
 
