@@ -136,7 +136,7 @@ def digital_root(n):
     return n
 
 # Test the function
-print(digital_root(955))  # Outputs 6 
+print(digital_root(955))  # 6 
 
 
 
