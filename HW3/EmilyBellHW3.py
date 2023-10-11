@@ -126,17 +126,21 @@ text = "UC Berkeley"
 print(count_vowels(text))  # outputs 4
 
 # 8) Write a function that takes in an integer and returns the sum of the digits (the digital root).
-def digital_root(n):
-    while n >= 10:  
-        sum_of_digits = 0
-        while n > 0:
-            sum_of_digits += n % 10  # Add last number
-            n //= 10  # Remove last number
-        n = sum_of_digits  # Set n to the sum of its digits for the next iteration
-    return n
+
+sumDigits = int(input("what number? "))
+
+def digital_root(sumDigits):
+    digitalRootNum=str(sumDigits)
+    sum = 0
+    while len(digitalRootNum) != 1:
+        for num in digitalRootNum:
+            sum+=int(num)
+        digitalRootNum = str(sum)
+        return digitalRootNum
+    
 
 # Test the function
-print(digital_root(955))  # 6 
+print(digital_root(sumDigits))  # 6 
 
 
 
