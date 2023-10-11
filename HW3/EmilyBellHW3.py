@@ -26,8 +26,7 @@ print(is_it_a_leap_year(2100))  # False
 def what_is_BMI(height, weight):
     if height == 0:
         return "nobody is 0m tall!"
-    bmi = weight / (height ** 2)
-    return bmi
+    return (weight/(height**2))
 weight = 70  # in kilograms
 height = 1.8  # in meters
 print(what_is_BMI(weight, height))
@@ -44,14 +43,13 @@ def rotate_digits_right(n):
     # Remove last digit
     n //= 10
 
-    # Determine the order of magnitude of the number
+    # order of magnitude
     magnitude = 1
     temp = n
     while temp > 0:
         temp //= 10
         magnitude *= 10
 
-    # Rotate the last digit to the front and combine
     rotated = last_digit * magnitude + n
 
     return rotated
@@ -89,7 +87,7 @@ def find_max_while(numbers):
 # minimum value using for loop
 def find_min_for(numbers):
     if not numbers:
-        return None  # Return None if list is empty
+        return None  
 
     min_val = numbers[0]
     for num in numbers:
@@ -100,7 +98,7 @@ def find_min_for(numbers):
 #maximum value using for loop
 def find_max_for(numbers):
     if not numbers:
-        return None  # Return None if list is empty
+        return None  
 
     max_val = numbers[0]
     for num in numbers:
@@ -109,10 +107,9 @@ def find_max_for(numbers):
     return max_val
 
 numbers = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5]
-print(find_min_for(numbers))  # Outputs: 1
-print(find_max_for(numbers))  # Outputs: 9
-print(find_min_while(numbers))  # Outputs: 1
-print(find_max_while(numbers))  # Outputs: 9
+print(find_min_for(numbers))  
+print(find_max_for(numbers))  
+print(find_max_while(numbers))  
 
 # 7) Write a function in python which takes in a string and outputs the number of vowels. Consider only a,e,i,o,u to be vowels and do not forget about capital letters.
 def count_vowels(string):
@@ -127,17 +124,18 @@ text = "UC Berkeley"
 print(count_vowels(text))  # outputs 4
 
 # 8) Write a function that takes in an integer and returns the sum of the digits (the digital root).
-def digital_root(n):
-    while n >= 10:  # Continue until n is a single-digit number
-        sum_of_digits = 0
-        while n > 0:
-            sum_of_digits += n % 10  # Add the last digit to the sum
-            n //= 10  # Remove the last digit
-        n = sum_of_digits  # Set n to the sum of its digits for the next iteration
-    return n
+
+sumDigits = int(input("what number? "))
+
+def digital_root(sumDigits):
+    digitalRootNum=str(sumDigits)
+    sum = 0
+    while len(digitalRootNum) != 1:
+        for num in digitalRootNum:
+            sum+=int(num)
+        digitalRootNum = str(sum)
+        return digitalRootNum
+    
 
 # Test the function
-print(digital_root(955))  # Outputs 6 
-
-
-
+print(digital_root(sumDigits))  
