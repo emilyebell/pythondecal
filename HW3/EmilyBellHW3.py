@@ -43,14 +43,13 @@ def rotate_digits_right(n):
     # Remove last digit
     n //= 10
 
-    # Determine the order of magnitude of the number
+    # order of magnitude
     magnitude = 1
     temp = n
     while temp > 0:
         temp //= 10
         magnitude *= 10
 
-    # Rotate the last digit to the front and combine
     rotated = last_digit * magnitude + n
 
     return rotated
@@ -88,7 +87,7 @@ def find_max_while(numbers):
 # minimum value using for loop
 def find_min_for(numbers):
     if not numbers:
-        return None  # Return None if list is empty
+        return None  
 
     min_val = numbers[0]
     for num in numbers:
@@ -99,7 +98,7 @@ def find_min_for(numbers):
 #maximum value using for loop
 def find_max_for(numbers):
     if not numbers:
-        return None  # Return None if list is empty
+        return None  
 
     max_val = numbers[0]
     for num in numbers:
@@ -108,10 +107,9 @@ def find_max_for(numbers):
     return max_val
 
 numbers = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5]
-print(find_min_for(numbers))  # Outputs: 1
-print(find_max_for(numbers))  # Outputs: 9
-print(find_min_while(numbers))  # Outputs: 1
-print(find_max_while(numbers))  # Outputs: 9
+print(find_min_for(numbers))  
+print(find_max_for(numbers))  
+print(find_max_while(numbers))  
 
 # 7) Write a function in python which takes in a string and outputs the number of vowels. Consider only a,e,i,o,u to be vowels and do not forget about capital letters.
 def count_vowels(string):
@@ -140,7 +138,7 @@ def digital_root(sumDigits):
     
 
 # Test the function
-print(digital_root(sumDigits))  # 6 
+print(digital_root(sumDigits))  
 
 
 
