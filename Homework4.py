@@ -56,7 +56,7 @@ sorted_odd_integers = np.sort(odd_integers)
 
 sorted_odd_integers_list = sorted_odd_integers.tolist()
 
-print(sorted_odd_integers_list)
+print(sorted_odd_integers_list) #because my variable name was too large I was getting lots of errors associated with mistakes retyping it
 
 """
 Q3 2D Lists
