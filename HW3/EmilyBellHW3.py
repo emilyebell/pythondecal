@@ -139,6 +139,3 @@ def digital_root(sumDigits):
 
 # Test the function
 print(digital_root(sumDigits))  
-
-
-
