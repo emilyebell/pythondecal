@@ -1,0 +1,15 @@
+import numpy as np
+
+def sorting(bigMatrix):
+    return np.sort(bigMatrix, axis=0)
+
+# Example usage:
+np.random.seed(12345)
+a = np.random.randint(1, 50, (4, 5))
+print("Original matrix:")
+print(a)
+
+sorted_matrix = sorting(a)
+print("\nSorted matrix:")
+print(sorted_matrix)
+
